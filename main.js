@@ -105,13 +105,13 @@ function login() {
 
             // DOne
             alert('User Logged In')
+            window.location.href = "page.html";
 
         })
         .catch(function (error) {
             // Firebase will use this to alert of its errors
             var error_code = error.code
             var error_message = error.message
-
             alert(error_message)
             
         })
